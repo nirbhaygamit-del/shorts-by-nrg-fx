@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Editor Portfolio | Short-Form Specialist</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        darkbg: '#0a0a0a',
+                        cardbg: '#171717',
+                        accent: '#8b5cf6'
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-darkbg text-gray-100 font-sans antialiased selection:bg-accent selection:text-white">
+
+    <!-- Header / Navbar -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-darkbg/85 backdrop-blur-md border-b border-gray-800">
+        <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+            <a href="#" class="text-xl font-bold tracking-tight text-white flex items-center gap-2">
+                <span class="w-3 h-3 rounded-full bg-accent animate-pulse"></span>
+                <span>Alex.edit</span>
+            </a>
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-gray-400">
+                <a href="#work" class="hover:text-white transition">Work</a>
+                <a href="#skills" class="hover:text-white transition">Software</a>
+                <a href="#contact" class="hover:text-white transition">Contact</a>
+            </nav>
+            <a href="#contact" class="bg-accent hover:bg-violet-700 text-white text-sm font-medium px-4 py-2 rounded-lg transition shadow-lg shadow-accent/20">
+                Let's Talk
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-16 md:pt-44 md:pb-24 px-6 text-center max-w-4xl mx-auto">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-accent/10 border border-accent/20 text-accent text-xs font-semibold mb-6">
+            🔥 Short-Form Video Editor & Motion Designer
+        </div>
+        <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight text-white mb-6 leading-tight">
+            Hook your audience in <span class="text-transparent bg-clip-text bg-gradient-to-r from-accent to-pink-500">3 seconds flat.</span>
+        </h1>
+        <p class="text-base md:text-lg text-gray-400 max-w-2xl mx-auto mb-10">
+            I craft high-retention Reels, TikToks, and YouTube Shorts engineered for viral growth, fast pacing, and clean motion graphics.
+        </p>
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+            <a href="#work" class="w-full sm:w-auto bg-white text-darkbg font-semibold px-6 py-3 rounded-xl hover:bg-gray-200 transition">
+                View My Edits
+            </a>
+            <a href="#contact" class="w-full sm:w-auto bg-cardbg border border-gray-800 text-white font-semibold px-6 py-3 rounded-xl hover:border-gray-700 transition">
+                Book a Call
+            </a>
+        </div>
+    </section>
+
+    <!-- Portfolio Grid (Vertical 9:16 Reels Showcase) -->
+    <section id="work" class="py-16 px-6 max-w-6xl mx-auto">
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+            <div>
+                <h2 class="text-2xl md:text-3xl font-bold text-white mb-2">Featured Edits</h2>
+                <p class="text-gray-400 text-sm">Hover over videos to play or click to expand.</p>
+            </div>
+            <div class="mt-4 md:mt-0 flex gap-2 text-xs font-medium">
+                <button class="filter-btn px-3 py-1 rounded-lg bg-cardbg border border-gray-800 text-accent transition" data-filter="all">All</button>
+                <button class="filter-btn px-3 py-1 rounded-lg bg-cardbg border border-gray-800 text-gray-400 hover:text-white transition" data-filter="talking-head">Talking Head</button>
+                <button class="filter-btn px-3 py-1 rounded-lg bg-cardbg border border-gray-800 text-gray-400 hover:text-white transition" data-filter="vlog">Gaming/Vlog</button>
+            </div>
+        </div>
+
+        <!-- Grid of Vertical Videos -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            
+            <!-- Video Card 1 -->
+            <div class="bg-cardbg rounded-2xl border border-gray-800 overflow-hidden group portfolio-item" data-category="talking-head">
+                <div class="relative aspect-[9/16] bg-black">
+                    <video class="w-full h-full object-cover preview-video" muted loop playsinline>
+                        <source src="https://assets.mixkit.co/videos/preview/mixkit-girl-in-neon-sign-lights-42938-large.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="absolute top-3 right-3 bg-black/60 backdrop-blur-md px-2 py-1 rounded-md text-[10px] font-bold text-white uppercase tracking-wider">
+                        Retention: 78%
+                    </div>
+                </div>
+                <div class="p-4">
+                    <h3 class="font-semibold text-white text-sm mb-1">Tech Review Hook Optimization</h3>
+                    <p class="text-xs text-gray-400">Dynamic captions, sound design, custom B-roll integration.</p>
+                </div>
+            </div>
+
+            <!-- Video Card 2 -->
+            <div class="bg-cardbg rounded-2xl border border-gray-800 overflow-hidden group portfolio-item" data-category="vlog">
+                <div class="relative aspect-[9/16] bg-black">
+                    <video class="w-full h-full object-cover preview-video" muted loop playsinline>
+                        <source src="https://assets.mixkit.co/videos/preview/mixkit-man-holding-neon-lights-in-the-dark-42935-large.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="absolute top-3 right-3 bg-black/60 backdrop-blur-md px-2 py-1 rounded-md text-[10px] font-bold text-white uppercase tracking-wider">
+                        1.2M Views
+                    </div>
+                </div>
+                <div class="p-4">
+                    <h3 class="font-semibold text-white text-sm mb-1">Fitness Motivation Vlog</h3>
+                    <p class="text-xs text-gray-400">Fast cuts, custom transitions, color grade LUT.</p>
+                </div>
+            </div>
+
+            <!-- Video Card 3 -->
+            <div class="bg-cardbg rounded-2xl border border-gray-800 overflow-hidden group portfolio-item" data-category="talking-head">
+                <div class="relative aspect-[9/16] bg-black">
+                    <video class="w-full h-full object-cover preview-video" muted loop playsinline>
+                        <source src="https://assets.mixkit.co/videos/preview/mixkit-dj-mixing-music-in-a-club-41315-large.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="absolute top-3 right-3 bg-black/60 backdrop-blur-md px-2 py-1 rounded-md text-[10px] font-bold text-white uppercase tracking-wider">
+                        Podcast Clip
+                    </div>
+                </div>
+                <div class="p-4">
+                    <h3 class="font-semibold text-white text-sm mb-1">Startup Founder Interview</h3>
+                    <p class="text-xs text-gray-400">Multi-cam framing, Alex Hormozi style animated captions.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Software Stack Section -->
+    <section id="skills" class="py-16 px-6 max-w-6xl mx-auto border-t border-gray-800/60">
+        <h2 class="text-2xl font-bold text-white mb-8 text-center">My Editing Stack</h2>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+            <div class="p-6 rounded-xl bg-cardbg border border-gray-800">
+                <span class="block text-accent font-bold text-lg mb-1">Premiere Pro</span>
+                <span class="text-xs text-gray-400">Advanced Assembly & Multicam</span>
+            </div>
+            <div class="p-6 rounded-xl bg-cardbg border border-gray-800">
+                <span class="block text-accent font-bold text-lg mb-1">After Effects</span>
+                <span class="text-xs text-gray-400">Motion Graphics & VFX</span>
+            </div>
+            <div class="p-6 rounded-xl bg-cardbg border border-gray-800">
+                <span class="block text-accent font-bold text-lg mb-1">DaVinci Resolve</span>
+                <span class="text-xs text-gray-400">Color Grading & Audio Sync</span>
+            </div>
+            <div class="p-6 rounded-xl bg-cardbg border border-gray-800">
+                <span class="block text-accent font-bold text-lg mb-1">CapCut Pro</span>
+                <span class="text-xs text-gray-400">Speed Ramping & Auto-Captions</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 px-6 max-w-3xl mx-auto text-center">
+        <h2 class="text-3xl font-bold text-white mb-4">Let's Elevate Your Content</h2>
+        <p class="text-gray-400 text-sm mb-8">Looking for a consistent editor to scale your channel? Drop a message below.</p>
+        <a href="mailto:your-email@example.com" class="inline-block bg-accent hover:bg-violet-700 text-white font-semibold px-8 py-4 rounded-xl transition shadow-lg shadow-accent/20">
+            Get in Touch via Email
+        </a>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 border-t border-gray-800 text-center text-xs text-gray-500">
+        <p>© 2026 Alex. All rights reserved.</p>
+    </footer>
+
+    <!-- Custom Script -->
+    <script src="script.js"></script>
+</body>
+</html>
