@@ -6,6 +6,7 @@
     <title>Video Editor Portfolio | Short-Form Specialist</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=clash-display@600,700&display=swap">
     <script>
         tailwind.config = {
             darkMode: 'class',
@@ -32,14 +33,14 @@
         <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
             <a href="#" class="text-xl font-bold tracking-tight text-white flex items-center gap-2">
                 <span class="w-3 h-3 rounded-full bg-accent animate-pulse"></span>
-                <span>Alex.edit</span>
+                <span>NRG FX</span>
             </a>
             <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-gray-400">
                 <a href="#work" class="hover:text-white transition">Work</a>
                 <a href="#skills" class="hover:text-white transition">Software</a>
                 <a href="#contact" class="hover:text-white transition">Contact</a>
             </nav>
-            <a href="#contact" class="bg-accent hover:bg-violet-700 text-white text-sm font-medium px-4 py-2 rounded-lg transition shadow-lg shadow-accent/20">
+            <a href="mailto:thenrgfx@gmail.com" class="bg-accent hover:bg-violet-700 text-white text-sm font-medium px-4 py-2 rounded-lg transition shadow-lg shadow-accent/20">
                 Let's Talk
             </a>
         </div>
@@ -48,10 +49,10 @@
     <!-- Hero Section -->
     <section class="pt-32 pb-16 md:pt-44 md:pb-24 px-6 text-center max-w-4xl mx-auto">
         <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-accent/10 border border-accent/20 text-accent text-xs font-semibold mb-6">
-            🔥 Short-Form Video Editor & Motion Designer
+            -Short-Form Video Editor-
         </div>
         <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight text-white mb-6 leading-tight">
-            Hook your audience in <span class="text-transparent bg-clip-text bg-gradient-to-r from-accent to-pink-500">3 seconds flat.</span>
+            Some sample edits by <span class="text-transparent bg-clip-text bg-gradient-to-r from-accent to-pink-500">NRG FX.</span>
         </h1>
         <p class="text-base md:text-lg text-gray-400 max-w-2xl mx-auto mb-10">
             I craft high-retention Reels, TikToks, and YouTube Shorts engineered for viral growth, fast pacing, and clean motion graphics.
@@ -60,7 +61,7 @@
             <a href="#work" class="w-full sm:w-auto bg-white text-darkbg font-semibold px-6 py-3 rounded-xl hover:bg-gray-200 transition">
                 View My Edits
             </a>
-            <a href="#contact" class="w-full sm:w-auto bg-cardbg border border-gray-800 text-white font-semibold px-6 py-3 rounded-xl hover:border-gray-700 transition">
+            <a href="mailto:thenrgfx@gmail.com" class="w-full sm:w-auto bg-cardbg border border-gray-800 text-white font-semibold px-6 py-3 rounded-xl hover:border-gray-700 transition">
                 Book a Call
             </a>
         </div>
@@ -71,7 +72,7 @@
         <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
             <div>
                 <h2 class="text-2xl md:text-3xl font-bold text-white mb-2">Featured Edits</h2>
-                <p class="text-gray-400 text-sm">Hover over videos to play or click to expand.</p>
+                <p class="text-gray-400 text-sm">Click the play button or hover to play with sound.</p>
             </div>
             <div class="mt-4 md:mt-0 flex gap-2 text-xs font-medium">
                 <button class="filter-btn px-3 py-1 rounded-lg bg-cardbg border border-gray-800 text-accent transition" data-filter="all">All</button>
@@ -85,52 +86,67 @@
             
             <!-- Video Card 1 -->
             <div class="bg-cardbg rounded-2xl border border-gray-800 overflow-hidden group portfolio-item" data-category="talking-head">
-                <div class="relative aspect-[9/16] bg-black">
-                    <video class="w-full h-full object-cover preview-video" muted loop playsinline>
-                        <source src="https://assets.mixkit.co/videos/preview/mixkit-girl-in-neon-sign-lights-42938-large.mp4" type="video/mp4">
+                <div class="relative aspect-[9/16] bg-black flex items-center justify-center">
+                    <video class="w-full h-full object-cover preview-video cursor-pointer" loop playsinline>
+                        <source src="videos/anuv-jain-final.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
-                    <div class="absolute top-3 right-3 bg-black/60 backdrop-blur-md px-2 py-1 rounded-md text-[10px] font-bold text-white uppercase tracking-wider">
-                        Retention: 78%
+                    <!-- Play/Pause Overlay Button -->
+                    <button class="play-pause-btn absolute w-14 h-14 bg-black/60 backdrop-blur-md rounded-full flex items-center justify-center text-white border border-white/20 transition group-hover:scale-110 shadow-lg">
+                        <svg class="play-icon w-6 h-6 translate-x-0.5" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                        <svg class="pause-icon w-6 h-6 hidden" fill="currentColor" viewBox="0 0 24 24"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
+                    </button>
+                    <div class="absolute top-3 right-3 bg-black/60 backdrop-blur-md px-2 py-1 rounded-md text-[10px] font-bold text-white uppercase tracking-wider pointer-events-none">
+                        Anuv Jain podcast
                     </div>
                 </div>
                 <div class="p-4">
-                    <h3 class="font-semibold text-white text-sm mb-1">Tech Review Hook Optimization</h3>
+                    <h3 class="font-semibold text-white text-sm mb-1">Podcast edit</h3>
                     <p class="text-xs text-gray-400">Dynamic captions, sound design, custom B-roll integration.</p>
                 </div>
             </div>
 
             <!-- Video Card 2 -->
             <div class="bg-cardbg rounded-2xl border border-gray-800 overflow-hidden group portfolio-item" data-category="vlog">
-                <div class="relative aspect-[9/16] bg-black">
-                    <video class="w-full h-full object-cover preview-video" muted loop playsinline>
-                        <source src="https://assets.mixkit.co/videos/preview/mixkit-man-holding-neon-lights-in-the-dark-42935-large.mp4" type="video/mp4">
+                <div class="relative aspect-[9/16] bg-black flex items-center justify-center">
+                    <video class="w-full h-full object-cover preview-video cursor-pointer" loop playsinline>
+                        <source src="videos/purav-zha-podcast-final.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
-                    <div class="absolute top-3 right-3 bg-black/60 backdrop-blur-md px-2 py-1 rounded-md text-[10px] font-bold text-white uppercase tracking-wider">
-                        1.2M Views
+                    <!-- Play/Pause Overlay Button -->
+                    <button class="play-pause-btn absolute w-14 h-14 bg-black/60 backdrop-blur-md rounded-full flex items-center justify-center text-white border border-white/20 transition group-hover:scale-110 shadow-lg">
+                        <svg class="play-icon w-6 h-6 translate-x-0.5" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                        <svg class="pause-icon w-6 h-6 hidden" fill="currentColor" viewBox="0 0 24 24"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
+                    </button>
+                    <div class="absolute top-3 right-3 bg-black/60 backdrop-blur-md px-2 py-1 rounded-md text-[10px] font-bold text-white uppercase tracking-wider pointer-events-none">
+                        Purav Jha podcast
                     </div>
                 </div>
                 <div class="p-4">
-                    <h3 class="font-semibold text-white text-sm mb-1">Fitness Motivation Vlog</h3>
-                    <p class="text-xs text-gray-400">Fast cuts, custom transitions, color grade LUT.</p>
+                    <h3 class="font-semibold text-white text-sm mb-1">Podcast edit</h3>
+                    <p class="text-xs text-gray-400">Engaging captions and background music, with related b rolls</p>
                 </div>
             </div>
 
             <!-- Video Card 3 -->
             <div class="bg-cardbg rounded-2xl border border-gray-800 overflow-hidden group portfolio-item" data-category="talking-head">
-                <div class="relative aspect-[9/16] bg-black">
-                    <video class="w-full h-full object-cover preview-video" muted loop playsinline>
-                        <source src="https://assets.mixkit.co/videos/preview/mixkit-dj-mixing-music-in-a-club-41315-large.mp4" type="video/mp4">
+                <div class="relative aspect-[9/16] bg-black flex items-center justify-center">
+                    <video class="w-full h-full object-cover preview-video cursor-pointer" loop playsinline>
+                        <source src="videos/vivek-sir-final.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
-                    <div class="absolute top-3 right-3 bg-black/60 backdrop-blur-md px-2 py-1 rounded-md text-[10px] font-bold text-white uppercase tracking-wider">
-                        Podcast Clip
+                    <!-- Play/Pause Overlay Button -->
+                    <button class="play-pause-btn absolute w-14 h-14 bg-black/60 backdrop-blur-md rounded-full flex items-center justify-center text-white border border-white/20 transition group-hover:scale-110 shadow-lg">
+                        <svg class="play-icon w-6 h-6 translate-x-0.5" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                        <svg class="pause-icon w-6 h-6 hidden" fill="currentColor" viewBox="0 0 24 24"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
+                    </button>
+                    <div class="absolute top-3 right-3 bg-black/60 backdrop-blur-md px-2 py-1 rounded-md text-[10px] font-bold text-white uppercase tracking-wider pointer-events-none">
+                        Vivek Sir podcast
                     </div>
                 </div>
                 <div class="p-4">
-                    <h3 class="font-semibold text-white text-sm mb-1">Startup Founder Interview</h3>
-                    <p class="text-xs text-gray-400">Multi-cam framing, Alex Hormozi style animated captions.</p>
+                    <h3 class="font-semibold text-white text-sm mb-1">Podcast edit</h3>
+                    <p class="text-xs text-gray-400">Dynamic captions, sound design, custom B-roll integration.</p>
                 </div>
             </div>
 
@@ -138,40 +154,36 @@
     </section>
 
     <!-- Software Stack Section -->
+   <!-- Software Stack Section -->
     <section id="skills" class="py-16 px-6 max-w-6xl mx-auto border-t border-gray-800/60">
         <h2 class="text-2xl font-bold text-white mb-8 text-center">My Editing Stack</h2>
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
-            <div class="p-6 rounded-xl bg-cardbg border border-gray-800">
-                <span class="block text-accent font-bold text-lg mb-1">Premiere Pro</span>
-                <span class="text-xs text-gray-400">Advanced Assembly & Multicam</span>
-            </div>
-            <div class="p-6 rounded-xl bg-cardbg border border-gray-800">
-                <span class="block text-accent font-bold text-lg mb-1">After Effects</span>
-                <span class="text-xs text-gray-400">Motion Graphics & VFX</span>
-            </div>
-            <div class="p-6 rounded-xl bg-cardbg border border-gray-800">
-                <span class="block text-accent font-bold text-lg mb-1">DaVinci Resolve</span>
-                <span class="text-xs text-gray-400">Color Grading & Audio Sync</span>
-            </div>
-            <div class="p-6 rounded-xl bg-cardbg border border-gray-800">
-                <span class="block text-accent font-bold text-lg mb-1">CapCut Pro</span>
-                <span class="text-xs text-gray-400">Speed Ramping & Auto-Captions</span>
+        <div class="flex justify-center">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-center max-w-2xl w-full">
+                <div class="p-6 rounded-xl bg-cardbg border border-gray-800">
+                    <span class="block text-accent font-bold text-lg mb-1">Premiere Pro</span>
+                    <span class="text-xs text-gray-400">Advanced Assembly & Multicam</span>
+                </div>
+
+                <div class="p-6 rounded-xl bg-cardbg border border-gray-800">
+                    <span class="block text-accent font-bold text-lg mb-1">CapCut Pro</span>
+                    <span class="text-xs text-gray-400">Speed Ramping & Auto-Captions</span>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
     <section id="contact" class="py-20 px-6 max-w-3xl mx-auto text-center">
-        <h2 class="text-3xl font-bold text-white mb-4">Let's Elevate Your Content</h2>
+        <h2 class="text-3xl font-bold text-white mb-4">Let's Create Your Content</h2>
         <p class="text-gray-400 text-sm mb-8">Looking for a consistent editor to scale your channel? Drop a message below.</p>
-        <a href="mailto:your-email@example.com" class="inline-block bg-accent hover:bg-violet-700 text-white font-semibold px-8 py-4 rounded-xl transition shadow-lg shadow-accent/20">
-            Get in Touch via Email
+        <a href="mailto:thenrgfx@gmail.com" class="inline-block bg-accent hover:bg-violet-700 text-white font-semibold px-8 py-4 rounded-xl transition shadow-lg shadow-accent/20">
+            Get in Touch
         </a>
     </section>
 
     <!-- Footer -->
     <footer class="py-8 border-t border-gray-800 text-center text-xs text-gray-500">
-        <p>© 2026 Alex. All rights reserved.</p>
+        <p>© 2026 NRG FX. All rights reserved.</p>
     </footer>
 
     <!-- Custom Script -->

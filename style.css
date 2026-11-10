@@ -3,6 +3,11 @@ html {
     scroll-behavior: smooth;
 }
 
+/* Apply Clash Display to all Headings */
+h1, h2, h3 {
+    font-family: 'Clash Display', sans-serif;
+}
+
 /* Custom scrollbar matching dark theme */
 ::-webkit-scrollbar {
     width: 8px;
